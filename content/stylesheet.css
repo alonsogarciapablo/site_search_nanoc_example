@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size:x-small;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+  padding: 1em;
+}
+
+#wrapper {
+  width: 1000px;
+}
+
+h2 {
+  font-size:3em;
+  margin:0.5em 0;
+}
+
+div.search_results > h3 {
+  font-size:2em;
+}
+
+div.search_results > h3 > span {
+  color:#CDCDCD;
+  font-size:1em;
+  margin:0 0 0 0.3em;
+}
+
+/* búsqueda rápida */
+
+#quick_search_form {
+  text-align:right;
+}
+
+#quick_search_form > input[type='text'] {
+  font-size:1.4em;
+}
+
+#quick_search_form > select {
+  font-size:1.4em;
+}
+
+#quick_search_form > input[type='submit'] {
+  font-size:1.3em;
+}
+
+/* tipos de búsqueda */
+
+#search_types {
+  margin-top:1em;
+}
+
+#search_types > ul {
+  margin:0.7em 0;
+}
+
+#search_types > ul > li {
+  display:inline;
+  margin-left:1em;
+}
+
+#search_types > ul > li:first-child {
+  margin-left:0em;
+}
+
+#search_types > ul > li > span, #search_types > ul > li > a {
+  font-size:1.4em;
+  padding:0.7em;
+}
+
+#search_types > ul > li > span {
+  font-weight:bold;
+}
+
+/* search */
+
+#search {
+  background:#CDCDCD;
+  padding:1em;
+  position:relative;
+}
+
+#search_form > input[type="text"] {
+  border:1px solid #333;
+  font-size:1.6em;
+  padding:0.3em;
+  width:20em;
+}
+
+#search_form > input[type="submit"] {
+  font-size:1.6em;
+  padding:0.2em;
+}
+
+/* resultados */
+
+div.search_results {
+  margin:1em 0;
+  padding:1em;
+}
+
+/** enlace a todos los resultados **/
+
+p.all_results {
+  border-top:1px solid #CDCDCD;
+  margin:1em 0;
+  padding-top:1em;
+  text-align:right;
+}
+
+p.all_results > a {
+  font-size:1.4em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clear {
+  clear:left;
+}
+
+/*******/
+
+ul.list_of_users {
+  list-style-type: none;
+  margin: 1em 0;
+  overflow: hidden;
+}
+
+ul.list_of_users li.clear {
+  margin-left: 0em; 
+}
+
+ul.list_of_users li {
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  width: 17.7em;
+}
+
+ul.list_of_users li img {
+  float: left;
+  margin: 0 0.5em 0.5em 0;
+}
+
+ul.list_of_users li > div.info {
+  float: right;
+  width: 49%;
+}
+
+ul.list_of_users li p {
+  line-height: 100%;
+  margin-bottom: 0;
+}
+
+ul.list_of_users li p.fullname {
+  font-size: 1.4em;
+  margin: 0.3em 0;
+}
+
+ul.list_of_users li p.location {
+  font-size: 1.2em;
+}
+
+ul.list_of_users li p.actions {
+  border-top: 1px solid #cdcdcd;
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+  text-align: right;
+}
+
+ul.list_of_users li p.actions a span {
+  font-size: 85%;
+}
+
+/***********/
+
+ul.list_of_contents {
+  list-style-type: none;
+  margin: 1em 0;
+  overflow: hidden;
+}
+
+ul.list_of_contents li {
+  float: left;
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  width: 10.5em;
+}
+
+ul.list_of_contents li a span {
+  font-size: 1.2em;
+}
+
+ul.list_of_contents li img {
+  display: block;
+  margin: 0 auto 0.5em auto;
+}
+

@@ -1,0 +1,9 @@
+<div id="search_types">
+  <ul>
+    <%= list_item_with_link_if_not_active('Toda la web', '/all/', search_type != :all) %>
+    <%= list_item_with_link_if_not_active('Contenidos', '/contents/', search_type != :contents) %>
+    <%= list_item_with_link_if_not_active('Usuarios', '/users/', search_type != :users) %>
+  </ul>
+</div>
+
+
