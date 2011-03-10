@@ -2,108 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Búsqueda Todos los </title>
+    <title>Búsqueda </title>
     <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
     <meta name="generator" content="nanoc 3.1.4">
   </head>
   <body>
+    <div id="wrapper">
+      
+      
 
-    <div id="quick_search">
-      <form id="quick_search_form">
-        <input type="text" id="q" name="q" />
-        <select  id="type" name="type" >
-          <option value="all">Todo</option>
-          <option value="contents">Contenidos</option>
-          <option value="users">Usuarios</option>
-        </select>
-        <input type="submit" value="Buscar" />
-      </form>
+      <div id="quick_search">
+        <form id="quick_search_form" action="/all/">
+          <input type="text" id="q" name="q" />
+          <select  id="type" name="type" >
+            <option value="all">Todo</option>
+            <option value="contents">Contenidos</option>
+            <option value="users">Usuarios</option>
+          </select>
+          <input type="submit" value="Buscar" />
+        </form>
+      </div>
+
+      <p style="font-size:1.6em">Aquí no hay nada, prueba a hacer alguna búsqueda...</p>
+
+
     </div>
-
-    <h2>Resultados de la búsqueda</h2>
-
-<div id="search_types">
-  <ul>
-    <li><span>Toda la web</span></li>
-    <li><a href='/contents/'>Contenidos</a></li>
-    <li><a href='/users/'>Usuarios</a></li>
-  </ul>
-</div>
-
-
-
-
-<div id="search">
-  <form id="search_form">
-    <input type="text" id="q" name="q" value="matemáticas" />
-    <input type="submit" value="Buscar" />
-  </form>
-</div>
-
-<div class="search_results contents">
-  <h3>Contenidos<span>(23)</span></h3>
-
-  <ul class="list_of_contents">
-  <li><a href="#"><img src="images/content.jpeg" alt="Portada del contenido" class="framed"><span>Título del contenido</span></a></li>
-  <li><a href="#"><img src="images/content.jpeg" alt="Portada del contenido" class="framed"><span>Otro contenido un poco más largo</span></a></li>
-  <li><a href="#"><img src="images/content.jpeg" alt="Portada del contenido" class="framed"><span>Título de un contenido</span></a></li>
-  <li><a href="#"><img src="images/content.jpeg" alt="Portada del contenido" class="framed"><span>Título del contenido</span></a></li>
-  <li><a href="#"><img src="images/content.jpeg" alt="Portada del contenido" class="framed"><span>Título del contenido</span></a></li>
-</ul>
-
-
-  <p class="all_results"><a href="/contents">Ver todos los resultados</a></p>
-</div>
-
-<div class="search_results users">
-  <h3>Usuarios<span>(15)</span></h3>
-
-  <ul class="list_of_users">
-    <li class="clear">
-      <img src="images/user.jpeg" alt="Avatar el usuario XXX" class="framed" />
-			<div class="info">
-        <p class="fullname"><a href="#">Manolo Escobar Martínez</a></p>
-        <p class="location">Gijón, España</p>
-        <p class="actions"><a href="#" class="add_as_friend"><span>Añadir a mis amigos</span></a></p>							
-			</div>
-    </li>
-    <li>
-      <img src="images/user.jpeg" alt="Avatar el usuario XXX" class="framed" />
-      <div class="info">
-        <p class="fullname"><a href="#">José Luis Cantero</a></p>
-        <p class="location">Barcelona, España</p>
-        <p class="actions"><a href="#" class="add_as_friend"><span>Añadir a mis amigos</span></a></p>
-			</div>
-    </li>
-    <li>
-      <img src="images/user.jpeg" alt="Avatar el usuario XXX" class="framed" />
-      <div class="info">
-        <p class="fullname"><a href="#">Rafael González Suarez</a></p>
-        <p class="location">Ciudad Real, España</p>
-        <p class="actions"><a href="#" class="add_as_friend"><span>Añadir a mis amigos</span></a></p>
-			</div>
-    </li>
-    <li class="clear">
-      <img src="images/user.jpeg" alt="Avatar el usuario XXX" class="framed" />
-      <div class="info">
-        <p class="fullname"><a href="#">José Luis Cantero</a></p>
-        <p class="location">Barcelona, España</p>
-        <p class="actions"><a href="#" class="add_as_friend"><span>Añadir a mis amigos</span></a></p>
-      </div>
-    </li>
-    <li>
-      <img src="images/user.jpeg" alt="Avatar el usuario XXX" class="framed" />
-      <div class="info">
-        <p class="fullname"><a href="#">Manolo Escobar Martínez</a></p>
-        <p class="location">Gijón, España</p>
-        <p class="actions"><a href="#" class="add_as_friend"><span>Añadir a mis amigos</span></a></p>
-      </div>
-    </li>
- </ul>
-
-
-  <p class="all_results"><a href="/contents">Ver todos los resultados</a></p>
-</div>
-
   </body>
 </html>

@@ -1,24 +1,19 @@
 ---
-title: "Todos los "
+title: "Todos los resultados"
 ---
 
 <h2>Resultados de la búsqueda</h2>
 
 <%= render '_search_types_filter', :search_type => :all %>
 
-<div id="search">
-  <form id="search_form">
-    <input type="text" id="q" name="q" value="matemáticas" />
-    <input type="submit" value="Buscar" />
-  </form>
-</div>
+<%= render '_search', :search_type => :all %>
 
 <div class="search_results contents">
   <h3>Contenidos<span>(23)</span></h3>
 
   <%= render '_list_of_contents' %>
 
-  <p class="all_results"><a href="/contents/">Ver todos los resultados</a></p>
+  <p class="all_results"><a href="/contents/">Ver todos los contenidos</a></p>
 </div>
 
 <div class="search_results users">
@@ -26,5 +21,5 @@ title: "Todos los "
 
   <%= render '_list_of_users' %>
 
-  <p class="all_results"><a href="/users/">Ver todos los resultados</a></p>
+  <p class="all_results"><a href="/users/">Ver todos los usuarios</a></p>
 </div>

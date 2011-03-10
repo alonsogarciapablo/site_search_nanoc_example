@@ -2,14 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Búsqueda </title>
+    <title>Búsqueda Contenidos</title>
     <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
     <meta name="generator" content="nanoc 3.1.4">
   </head>
   <body>
     <div id="wrapper">
+      
+      
+        <a href="/" style="float:left" >Inicio</a>
+      
+
       <div id="quick_search">
-        <form id="quick_search_form">
+        <form id="quick_search_form" action="/all/">
           <input type="text" id="q" name="q" />
           <select  id="type" name="type" >
             <option value="all">Todo</option>
@@ -36,14 +41,26 @@
 <div id="search">
   <form id="search_form">
     <input type="text" id="q" name="q" value="matemáticas" />
+
+    
+      <div id="advanced_search_fields" style="display:none" >
+        <input type="text" id="autor" name="autor" />
+      </div>
+    
+
     <input type="submit" value="Buscar" />
+
+       
+      <a id="advanced_search_link" href="#">Búsqueda avanzada</a>
+    
+
   </form>
 </div>
+
 
 <div class="search_results">
 
 </div>
-
 
     </div>
   </body>

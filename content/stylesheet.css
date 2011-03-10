@@ -83,6 +83,9 @@ div.search_results > h3 > span {
   position:relative;
 }
 
+#search_form {
+}
+
 #search_form > input[type="text"] {
   border:1px solid #333;
   font-size:1.6em;
@@ -93,6 +96,11 @@ div.search_results > h3 > span {
 #search_form > input[type="submit"] {
   font-size:1.6em;
   padding:0.2em;
+}
+
+#advanced_search_link {
+  display:block;
+  margin:0.5em 0;
 }
 
 /* resultados */

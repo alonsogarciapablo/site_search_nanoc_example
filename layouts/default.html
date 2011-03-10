@@ -8,8 +8,13 @@
   </head>
   <body>
     <div id="wrapper">
+      
+      <% if @item.identifier != '/' %>
+        <a href="/" style="float:left" >Inicio</a>
+      <% end %>
+
       <div id="quick_search">
-        <form id="quick_search_form">
+        <form id="quick_search_form" action="/all/">
           <input type="text" id="q" name="q" />
           <select  id="type" name="type" >
             <option value="all">Todo</option>
