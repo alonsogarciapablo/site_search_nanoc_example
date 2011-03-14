@@ -2,30 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Búsqueda Todos los resultados</title>
-    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
-    <meta name="generator" content="nanoc 3.1.4">
+    <title>Búsqueda en toda la web</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" media="screen">
+    <script type="text/javascript" src="/javascripts/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script type="text/javascript" src="/javascripts/application.js"></script>
   </head>
   <body>
     <div id="wrapper">
-      
-      
-        <a href="/" style="float:left" >Inicio</a>
-      
+      <div id="header">
 
-      <div id="quick_search">
-        <form id="quick_search_form" action="/all/">
-          <input type="text" id="q" name="q" />
-          <select  id="type" name="type" >
-            <option value="all">Todo</option>
-            <option value="contents">Contenidos</option>
-            <option value="users">Usuarios</option>
-          </select>
-          <input type="submit" value="Buscar" />
-        </form>
+        
+          <a href="/" style="float:left" >Inicio</a>
+        
+
+        <div id="quick_search">
+          <form id="quick_search_form" action="/all/">
+            <input type="text" id="q" name="q" />
+            <select  id="type" name="type" >
+              <option value="all">Todo</option>
+              <option value="contents">Contenidos</option>
+              <option value="users">Usuarios</option>
+            </select>
+            <input type="submit" value="Buscar" />
+          </form>
+        </div>
       </div>
+      <div id="main_content">
 
-      <h2>Resultados de la búsqueda</h2>
+        <h2>Resultados de la búsqueda</h2>
 
 <div id="search_types">
   <ul>
@@ -52,71 +57,203 @@
 </div>
 
 
-<div class="search_results contents">
+<div class="search_results contents featured">
+
   <h3>Contenidos<span>(23)</span></h3>
 
-  <ul class="list_of_contents">
-  <li><a href="#"><img src="/images//content.jpeg" alt="Portada del contenido" class="framed"><span>Título del contenido</span></a></li>
-  <li><a href="#"><img src="/images//content.jpeg" alt="Portada del contenido" class="framed"><span>Otro contenido un poco más largo</span></a></li>
-  <li><a href="#"><img src="/images//content.jpeg" alt="Portada del contenido" class="framed"><span>Título de un contenido</span></a></li>
-  <li><a href="#"><img src="/images//content.jpeg" alt="Portada del contenido" class="framed"><span>Título del contenido</span></a></li>
-  <li><a href="#"><img src="/images//content.jpeg" alt="Portada del contenido" class="framed"><span>Título del contenido</span></a></li>
+  <ul id="list_of_featured_contents">
+
+  
+    <li>
+      <a href="#">
+        <img src="/images/content.jpeg" alt="Portada del contenido" class="framed" />
+        <span>Título del contenido</span>
+      </a>
+      <p class="category">
+        Matemáticas &raquo; Integrales
+      <p>
+    </li>
+  
+    <li>
+      <a href="#">
+        <img src="/images/content.jpeg" alt="Portada del contenido" class="framed" />
+        <span>Título del contenido</span>
+      </a>
+      <p class="category">
+        Matemáticas &raquo; Integrales
+      <p>
+    </li>
+  
+    <li>
+      <a href="#">
+        <img src="/images/content.jpeg" alt="Portada del contenido" class="framed" />
+        <span>Título del contenido</span>
+      </a>
+      <p class="category">
+        Matemáticas &raquo; Integrales
+      <p>
+    </li>
+  
+    <li>
+      <a href="#">
+        <img src="/images/content.jpeg" alt="Portada del contenido" class="framed" />
+        <span>Título del contenido</span>
+      </a>
+      <p class="category">
+        Matemáticas &raquo; Integrales
+      <p>
+    </li>
+  
+    <li>
+      <a href="#">
+        <img src="/images/content.jpeg" alt="Portada del contenido" class="framed" />
+        <span>Título del contenido</span>
+      </a>
+      <p class="category">
+        Matemáticas &raquo; Integrales
+      <p>
+    </li>
+  
+    <li>
+      <a href="#">
+        <img src="/images/content.jpeg" alt="Portada del contenido" class="framed" />
+        <span>Título del contenido</span>
+      </a>
+      <p class="category">
+        Matemáticas &raquo; Integrales
+      <p>
+    </li>
+  
+    <li>
+      <a href="#">
+        <img src="/images/content.jpeg" alt="Portada del contenido" class="framed" />
+        <span>Título del contenido</span>
+      </a>
+      <p class="category">
+        Matemáticas &raquo; Integrales
+      <p>
+    </li>
+  
+
 </ul>
 
 
-  <p class="all_results"><a href="/contents/">Ver todos los contenidos</a></p>
+  <p class="show_all_results"><a href="/contents/">Ver todos los contenidos</a></p>
+
 </div>
 
-<div class="search_results users">
+<div class="search_results users featured">
+
   <h3>Usuarios<span>(15)</span></h3>
 
-  <ul class="list_of_users">
-    <li class="clear">
-      <img src="/images//user.jpeg" alt="Avatar el usuario XXX" class="framed" />
-			<div class="info">
+  <ul id="list_of_featured_users">
+
+  
+    <li>
+      <div class="avatar">
+        <a href="#">
+          <img src="/images/user.jpeg" alt="Avatar el usuario XXX" class="framed" />
+        </a>
+      </div>
+		  <div class="info">
         <p class="fullname"><a href="#">Manolo Escobar Martínez</a></p>
         <p class="location">Gijón, España</p>
-        <p class="actions"><a href="#" class="add_as_friend"><span>Añadir a mis amigos</span></a></p>							
-			</div>
+		  </div>
     </li>
+  
     <li>
-      <img src="/images//user.jpeg" alt="Avatar el usuario XXX" class="framed" />
-      <div class="info">
-        <p class="fullname"><a href="#">José Luis Cantero</a></p>
-        <p class="location">Barcelona, España</p>
-        <p class="actions"><a href="#" class="add_as_friend"><span>Añadir a mis amigos</span></a></p>
-			</div>
-    </li>
-    <li>
-      <img src="/images//user.jpeg" alt="Avatar el usuario XXX" class="framed" />
-      <div class="info">
-        <p class="fullname"><a href="#">Rafael González Suarez</a></p>
-        <p class="location">Ciudad Real, España</p>
-        <p class="actions"><a href="#" class="add_as_friend"><span>Añadir a mis amigos</span></a></p>
-			</div>
-    </li>
-    <li class="clear">
-      <img src="/images//user.jpeg" alt="Avatar el usuario XXX" class="framed" />
-      <div class="info">
-        <p class="fullname"><a href="#">José Luis Cantero</a></p>
-        <p class="location">Barcelona, España</p>
-        <p class="actions"><a href="#" class="add_as_friend"><span>Añadir a mis amigos</span></a></p>
+      <div class="avatar">
+        <a href="#">
+          <img src="/images/user.jpeg" alt="Avatar el usuario XXX" class="framed" />
+        </a>
       </div>
-    </li>
-    <li>
-      <img src="/images//user.jpeg" alt="Avatar el usuario XXX" class="framed" />
-      <div class="info">
+		  <div class="info">
         <p class="fullname"><a href="#">Manolo Escobar Martínez</a></p>
         <p class="location">Gijón, España</p>
-        <p class="actions"><a href="#" class="add_as_friend"><span>Añadir a mis amigos</span></a></p>
-      </div>
+		  </div>
     </li>
+  
+    <li>
+      <div class="avatar">
+        <a href="#">
+          <img src="/images/user.jpeg" alt="Avatar el usuario XXX" class="framed" />
+        </a>
+      </div>
+		  <div class="info">
+        <p class="fullname"><a href="#">Manolo Escobar Martínez</a></p>
+        <p class="location">Gijón, España</p>
+		  </div>
+    </li>
+  
+    <li>
+      <div class="avatar">
+        <a href="#">
+          <img src="/images/user.jpeg" alt="Avatar el usuario XXX" class="framed" />
+        </a>
+      </div>
+		  <div class="info">
+        <p class="fullname"><a href="#">Manolo Escobar Martínez</a></p>
+        <p class="location">Gijón, España</p>
+		  </div>
+    </li>
+  
+    <li>
+      <div class="avatar">
+        <a href="#">
+          <img src="/images/user.jpeg" alt="Avatar el usuario XXX" class="framed" />
+        </a>
+      </div>
+		  <div class="info">
+        <p class="fullname"><a href="#">Manolo Escobar Martínez</a></p>
+        <p class="location">Gijón, España</p>
+		  </div>
+    </li>
+  
+    <li>
+      <div class="avatar">
+        <a href="#">
+          <img src="/images/user.jpeg" alt="Avatar el usuario XXX" class="framed" />
+        </a>
+      </div>
+		  <div class="info">
+        <p class="fullname"><a href="#">Manolo Escobar Martínez</a></p>
+        <p class="location">Gijón, España</p>
+		  </div>
+    </li>
+  
+    <li>
+      <div class="avatar">
+        <a href="#">
+          <img src="/images/user.jpeg" alt="Avatar el usuario XXX" class="framed" />
+        </a>
+      </div>
+		  <div class="info">
+        <p class="fullname"><a href="#">Manolo Escobar Martínez</a></p>
+        <p class="location">Gijón, España</p>
+		  </div>
+    </li>
+  
+    <li>
+      <div class="avatar">
+        <a href="#">
+          <img src="/images/user.jpeg" alt="Avatar el usuario XXX" class="framed" />
+        </a>
+      </div>
+		  <div class="info">
+        <p class="fullname"><a href="#">Manolo Escobar Martínez</a></p>
+        <p class="location">Gijón, España</p>
+		  </div>
+    </li>
+  
+
  </ul>
 
 
-  <p class="all_results"><a href="/users/">Ver todos los usuarios</a></p>
+  <p class="show_all_results"><a href="/users/">Ver todos los usuarios</a></p>
+
 </div>
 
+      </div>
     </div>
   </body>
 </html>

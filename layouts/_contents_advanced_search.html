@@ -1,0 +1,10 @@
+<div id="search">
+  <form id="search_form">
+    <input type="text" id="q" name="q" value="matemáticas" />
+    <a id="toggle_search_type_link" href="/contents/">Búsqueda normal</a>
+
+    <%= render '_contents_advanced_search_fields', :visible => true %>
+
+    <input type="submit" value="Buscar" />
+  </form>
+</div>

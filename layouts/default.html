@@ -3,30 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>Búsqueda <%= @item[:title] %></title>
-    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
-    <meta name="generator" content="nanoc 3.1.4">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" media="screen">
+    <script type="text/javascript" src="/javascripts/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script type="text/javascript" src="/javascripts/application.js"></script>
   </head>
   <body>
     <div id="wrapper">
-      
-      <% if @item.identifier != '/' %>
-        <a href="/" style="float:left" >Inicio</a>
-      <% end %>
+      <div id="header">
 
-      <div id="quick_search">
-        <form id="quick_search_form" action="/all/">
-          <input type="text" id="q" name="q" />
-          <select  id="type" name="type" >
-            <option value="all">Todo</option>
-            <option value="contents">Contenidos</option>
-            <option value="users">Usuarios</option>
-          </select>
-          <input type="submit" value="Buscar" />
-        </form>
+        <% if @item.identifier != '/' %>
+          <a href="/" style="float:left" >Inicio</a>
+        <% end %>
+
+        <div id="quick_search">
+          <form id="quick_search_form" action="/all/">
+            <input type="text" id="q" name="q" />
+            <select  id="type" name="type" >
+              <option value="all">Todo</option>
+              <option value="contents">Contenidos</option>
+              <option value="users">Usuarios</option>
+            </select>
+            <input type="submit" value="Buscar" />
+          </form>
+        </div>
       </div>
+      <div id="main_content">
 
-      <%= yield %>
+        <%= yield %>
 
+      </div>
     </div>
   </body>
 </html>

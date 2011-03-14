@@ -1,0 +1,28 @@
+<% 
+  NUMBER_OF_ITEMS = 11
+  NUMBER_OF_ITEMS_PER_ROW = 2
+  
+  number_of_items_in_the_last_row = NUMBER_OF_ITEMS_PER_ROW
+  unless NUMBER_OF_ITEMS % NUMBER_OF_ITEMS_PER_ROW == 0
+    number_of_items_in_the_last_row = NUMBER_OF_ITEMS % NUMBER_OF_ITEMS_PER_ROW
+  end
+%>
+
+
+<% NUMBER_OF_ITEMS.times do |i| %> 
+  <li <%= "class = 'last_row'" if i >= (NUMBER_OF_ITEMS - number_of_items_in_the_last_row) %> >
+    <div class="avatar">
+      <a href="#">
+        <img src="/images/user.jpeg" />
+      </a>
+    </div>
+    <div class="info">
+      <p class="fullname"><a href="#">Arturo Pérez Fernández</a></p>
+      <p class="location">Gijón, España</p>
+      <ul class="activity">
+        <li class="number_of_contacts"><a href="#">15 contactos</a></li>
+        <li class="number_of_contents"><a href="#">12 contenidos</a></li>
+      </ul>
+    </div>
+  </li>
+<% end %>

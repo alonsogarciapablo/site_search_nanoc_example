@@ -1,7 +1,7 @@
-<ul class="list_of_contents">
-  <li><a href="#"><img src="/images//content.jpeg" alt="Portada del contenido" class="framed"><span>Título del contenido</span></a></li>
-  <li><a href="#"><img src="/images//content.jpeg" alt="Portada del contenido" class="framed"><span>Otro contenido un poco más largo</span></a></li>
-  <li><a href="#"><img src="/images//content.jpeg" alt="Portada del contenido" class="framed"><span>Título de un contenido</span></a></li>
-  <li><a href="#"><img src="/images//content.jpeg" alt="Portada del contenido" class="framed"><span>Título del contenido</span></a></li>
-  <li><a href="#"><img src="/images//content.jpeg" alt="Portada del contenido" class="framed"><span>Título del contenido</span></a></li>
+<ul id="list_of_contents">
+
+  <% 5.times do %>
+    <%= render '_list_of_contents_item' %>
+  <% end %>
+
 </ul>

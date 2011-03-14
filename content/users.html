@@ -1,5 +1,5 @@
 ---
-title: "Usuarios"
+title: "de usuarios"
 ---
 
 <h2>Resultados de la búsqueda</h2>
@@ -8,6 +8,13 @@ title: "Usuarios"
 
 <%= render '_search', :search_type => :users %>
 
-<div class="search_results">
+<div class="search_results users">
+
+  <h3>Usuarios<span>(15)</span></h3>
+
+  <%= render '_list_of_users' %>
+
+  <%= render '_pagination' %>
 
 </div>
+

@@ -1,0 +1,46 @@
+<div id="advanced_search_fields" <%= 'style="display:none"' if !visible %>>
+  <ul class="form_fields">
+    <li>
+      <label for="search_q">Cadena de búsqueda</label>
+      <input id="search_q" name="search[q]" size="30" type="text">
+    </li>
+    <li class="advanced_search_field" style="display: list-item; ">
+      <label for="search_author">Autor</label>
+      <input id="search_author" name="search[author]" size="30" type="text">
+    </li>
+    <li class="advanced_search_field" style="display: list-item; ">
+      <label for="search_category_id">Categoría</label>
+      <select id="search_category_id" name="search[category_id]">
+        <option value="">Selecciona una categoría</option>
+      </select>
+    </li>
+    <li class="advanced_search_field" style="display: list-item; ">
+      <label for="search_publication_date_start">Publicado después de</label>
+      <select id="search_publication_date_start_3i" name="search[publication_date_start(3i)]">
+        <option value="">Día</option>
+      </select>
+      <select id="search_publication_date_start_2i" name="search[publication_date_start(2i)]">
+        <option value="">Mes</option>
+      </select>
+      <select id="search_publication_date_start_1i" name="search[publication_date_start(1i)]">
+        <option value="">Año</option>
+      </select>
+    </li>
+    <li class="advanced_search_field" style="display: list-item; ">
+      <label for="search_publication_date_end">Publicado antes de</label>
+      <select id="search_publication_date_end_3i" name="search[publication_date_end(3i)]">
+        <option value="">Día</option>
+      </select>
+      <select id="search_publication_date_end_1i" name="search[publication_date_end(1i)]">
+        <option value="">Año</option>
+      </select>
+    </li>
+    <li class="advanced_search_field" style="display: list-item; ">
+      <label for="order">Ordenar por</label>
+      <select id="order" name="order">
+        <option value="title_asc">Título (orden ascendente)</option>
+      </select>
+    </li>
+  </ul>
+</div>
+

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Búsqueda de contenidos</title>
+    <title>Búsqueda avanzada de contenidos</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" media="screen">
     <script type="text/javascript" src="/javascripts/jquery-1.4.4.min.js"></script>
     <script type="text/javascript" src="/javascripts/jquery-ui-1.8.10.custom.min.js"></script>
@@ -46,9 +46,9 @@
 <div id="search">
   <form id="search_form">
     <input type="text" id="q" name="q" value="matemáticas" />
+    <a id="toggle_search_type_link" href="/contents/">Búsqueda normal</a>
 
-       
-      <div id="advanced_search_fields" style="display:none">
+    <div id="advanced_search_fields" >
   <ul class="form_fields">
     <li>
       <label for="search_q">Cadena de búsqueda</label>
@@ -95,19 +95,13 @@
 </div>
 
 
-    
 
     <input type="submit" value="Buscar" />
-
-       
-      <a id="toggle_search_type_link" href="/contents_advanced_search/">Búsqueda avanzada</a>
-    
-
   </form>
 </div>
 
 
-<div class="search_results contents with_filter">
+<div class="search_results contents">
 
   <h3>Contenidos<span>(23)</span></h3>
 
@@ -283,7 +277,9 @@
 </ul>
 
 
-    <ul id="pagination">
+</div>
+
+  <ul id="pagination">
     <li class="prev_link"><a href="#">&laquo; Anterior</a></li>
     <li><a href="#">1</a></li>
     <li class="current"><span>2</span></li>
@@ -292,29 +288,6 @@
     <li><a href="#">5</a></li>
     <li class="next_link"><span>Siguiente &raquo;</span></li>
   </ul>
-
-
-</div>
-
-<div class="filter content_categories">
-  <h3>Filtrar por categoría</h3>
-  <ul>
-    <li>
-      <a href="#" class="current">Categoría 1</a>
-      <ul>
-        <li><a href="#">Subcategoría 1.1</a></li>
-        <li><a href="#">Subcategoría 1.2</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#">Categoría 2</a>
-      <ul>
-        <li><a href="#" class="current">Subcategoría 2.1</a></li>
-        <li><a href="#">Subcategoría 2.2</a></li>
-      </ul>
-    </li>
-  </ul>
-</div>
 
 
       </div>

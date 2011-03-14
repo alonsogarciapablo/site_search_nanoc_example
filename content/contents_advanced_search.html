@@ -1,23 +1,19 @@
 ---
-title: "de contenidos"
+title: "avanzada de contenidos"
 ---
 
 <h2>Resultados de la búsqueda</h2>
 
 <%= render '_search_types_filter', :search_type => :contents %>
 
-<%= render '_search', :search_type => :contents %>
+<%= render '_contents_advanced_search' %>
 
-<div class="search_results contents with_filter">
+<div class="search_results contents">
 
   <h3>Contenidos<span>(23)</span></h3>
 
   <%= render '_list_of_contents' %>
 
-  <%= render '_pagination' %>
-
 </div>
 
-<%= render '_contents_filter' %>
-
-
+<%= render '_pagination' %>

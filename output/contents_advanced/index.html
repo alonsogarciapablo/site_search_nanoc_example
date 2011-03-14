@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Búsqueda </title>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" media="screen">
-    <script type="text/javascript" src="/javascripts/jquery-1.4.4.min.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery-ui-1.8.10.custom.min.js"></script>
-    <script type="text/javascript" src="/javascripts/application.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
+    <meta name="generator" content="nanoc 3.1.4">
   </head>
   <body>
-    <div id="wrapper">
-      <div id="header">
-
+    <div id="main_content">
+      <div id="wrapper">
+        
+        
+          <a href="/" style="float:left" >Inicio</a>
         
 
         <div id="quick_search">
@@ -25,10 +25,19 @@
             <input type="submit" value="Buscar" />
           </form>
         </div>
-      </div>
-      <div id="main_content">
 
-        <p style="font-size:1.6em">Aquí no hay nada, prueba a hacer alguna búsqueda...</p>
+        <div id="search">
+  <form id="search_form">
+    <input type="text" id="q" name="q" value="matemáticas" />
+
+      <div id="advanced_search_fields" style="display:none" >
+        <input type="text" id="autor" name="autor" />
+      </div>
+
+    <input type="submit" value="Buscar" />
+
+  </form>
+</div>
 
 
       </div>

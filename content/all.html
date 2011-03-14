@@ -1,5 +1,5 @@
 ---
-title: "Todos los resultados"
+title: "en toda la web"
 ---
 
 <h2>Resultados de la búsqueda</h2>
@@ -8,18 +8,22 @@ title: "Todos los resultados"
 
 <%= render '_search', :search_type => :all %>
 
-<div class="search_results contents">
+<div class="search_results contents featured">
+
   <h3>Contenidos<span>(23)</span></h3>
 
-  <%= render '_list_of_contents' %>
+  <%= render '_list_of_featured_contents' %>
 
-  <p class="all_results"><a href="/contents/">Ver todos los contenidos</a></p>
+  <p class="show_all_results"><a href="/contents/">Ver todos los contenidos</a></p>
+
 </div>
 
-<div class="search_results users">
+<div class="search_results users featured">
+
   <h3>Usuarios<span>(15)</span></h3>
 
-  <%= render '_list_of_users' %>
+  <%= render '_list_of_featured_users' %>
 
-  <p class="all_results"><a href="/users/">Ver todos los usuarios</a></p>
+  <p class="show_all_results"><a href="/users/">Ver todos los usuarios</a></p>
+
 </div>

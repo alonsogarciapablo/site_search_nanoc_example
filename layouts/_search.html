@@ -2,16 +2,14 @@
   <form id="search_form">
     <input type="text" id="q" name="q" value="matemáticas" />
 
-    <% if search_type == :contents %>
-      <div id="advanced_search_fields" style="display:none" >
-        <input type="text" id="autor" name="autor" />
-      </div>
+    <% if search_type == :contents %>   
+      <%= render '_contents_advanced_search_fields', :visible => false %>
     <% end %>
 
     <input type="submit" value="Buscar" />
 
     <% if search_type == :contents %>   
-      <a id="advanced_search_link" href="#">Búsqueda avanzada</a>
+      <a id="toggle_search_type_link" href="/contents_advanced_search/">Búsqueda avanzada</a>
     <% end %>
 
   </form>
