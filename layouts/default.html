@@ -13,11 +13,11 @@
       <div id="header">
 
         <% if @item.identifier != '/' %>
-          <a href="/" style="float:left">Inicio</a>
+          <a href="<%= relative_path_to('/') %>" style="float:left">Inicio</a>
         <% end %>
 
         <div id="quick_search">
-          <form id="quick_search_form" action="/all/">
+          <form id="quick_search_form" action="<%= relative_path_to('/all/') %>">
             <input type="text" id="q" name="q" />
             <select  id="type" name="type" >
               <option value="all">Todo</option>

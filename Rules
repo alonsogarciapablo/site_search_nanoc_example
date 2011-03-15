@@ -21,6 +21,8 @@ end
 
 compile '*' do
   filter :erb
+  filter :relativize_paths, :type => :html
+  filter :relativize_paths, :type => :css
   layout 'default'
 end
 

@@ -9,7 +9,7 @@
     <input type="submit" value="Buscar" />
 
     <% if search_type == :contents %>   
-      <a id="toggle_search_type_link" href="/contents_advanced_search/">Búsqueda avanzada</a>
+      <a id="toggle_search_type_link" href="<%= relative_path_to('/contents_advanced_search/') %>">Búsqueda avanzada</a>
     <% end %>
 
   </form>
