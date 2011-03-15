@@ -10,3 +10,4 @@ def list_item_with_link_if_not_active (text, link, active)
   end
   html += "</li>"
 end
+

@@ -502,7 +502,7 @@ div.filter.content_categories ul > li > a {
 }
 
 #list_of_contents > li > div.info > ul.rating > li.current-rating {
-  background: url(/images/star_rating.gif) left bottom;
+  background: url(/stylesheets/images/star_rating.gif) left bottom;
   position: absolute;
   height: 15px;
   display: block;
