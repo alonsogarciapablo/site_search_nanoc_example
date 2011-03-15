@@ -340,11 +340,11 @@ div.filter.content_categories ul > li > a {
 }
 
 #list_of_users > li > div.info > ul.activity > li.number_of_contacts > a {
-  background:url(/stylesheets/images/contact.png) left center no-repeat;
+  background:url(images/contact.png) left center no-repeat;
 }
 
 #list_of_users > li > div.info > ul.activity > li.number_of_contents > a {
-  background:url(/stylesheets/images/documents.png) left center no-repeat;
+  background:url(images/documents.png) left center no-repeat;
   padding-left:2em;
 }
 
@@ -437,7 +437,7 @@ div.filter.content_categories ul > li > a {
   width: 75px;
   height: 15px;
   position: relative;
-  background: url(/stylesheets/images/star_rating.gif) top left repeat-x;
+  background: url(images/star_rating.gif) top left repeat-x;
 }
 
 #list_of_contents > li > div.info > ul.rating > li {
@@ -502,7 +502,7 @@ div.filter.content_categories ul > li > a {
 }
 
 #list_of_contents > li > div.info > ul.rating > li.current-rating {
-  background: url(/stylesheets/images/star_rating.gif) left bottom;
+  background: url(images/star_rating.gif) left bottom;
   position: absolute;
   height: 15px;
   display: block;
